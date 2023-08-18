@@ -49,7 +49,7 @@ for(let i=0;  i< home_nav_items.length; i++) {
     });
 }
 
-// baaki jagah se navigate krne ka code 
+
 for(let i=0;  i<7; i++) {
     let btn = header_items[i];
     btn.addEventListener('click', function() {
@@ -66,7 +66,7 @@ for(let i=0;  i<7; i++) {
             home.classList.remove('hidden');
         }
         else if(i==5) {
-            return; // resume hai
+            return; 
         }
         else{
             for(let j=0;  j<7; j++) {
