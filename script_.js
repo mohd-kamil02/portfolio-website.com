@@ -36,7 +36,7 @@ window.onload = function () {
 
 let a = ['home', 'about', 'education', 'projects', 'skills', 'resume', 'contact'];
 let home_nav_items = document.querySelector('.nav').children;
-// home se baaki jaagh jaane ka codee
+
 for(let i=0;  i< home_nav_items.length; i++) {
     let btn = home_nav_items[i];
     btn.addEventListener('click', function () {
@@ -54,7 +54,7 @@ for(let i=0;  i<7; i++) {
     let btn = header_items[i];
     btn.addEventListener('click', function() {
         if(i == 0) {
-            // go to home
+           
             for(let j=0;  j<7; j++) {
                 if(j!=5 && document.querySelector(`.${a[j]}`).classList.contains('hidden') == false) {
                     document.querySelector(`.${a[j]}`).classList.add('hidden');
